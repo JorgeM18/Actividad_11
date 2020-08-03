@@ -1,0 +1,28 @@
+<div class="section">
+    <div class="container">
+        <h1 class="header center">Modifica el juego con los nuevos valores</h1>
+        <form #upadteGameForm='ngForm' (ngSubmit)='newGame();'>
+            <div>
+                <label for="titulo">Titulo: </label>
+                <input type="text" name="titulo" #titulo='ngModel' [(ngModel)]='gotGame.titulo'>
+            </div>
+            <div>
+                <label for="plataforma">Plataforma: </label>
+                <input type="text" name="plataforma" #plataforma='ngModel' [(ngModel)]='gotGame.plataforma'>
+            </div>
+            <div>
+                <label for="precio">Precio: </label>
+                <input type="number" name="precio" #precio='ngModel' [(ngModel)]='gotGame.precio'>
+            </div>
+            <div>
+                <label for="tipo">Tipo: </label>
+                <input type="text" name="tipo" #tipo='ngModel' [(ngModel)]='gotGame.tipo'>
+            </div>
+            <div>
+                <label for="descripcion">Descripción: </label>
+                <textarea name="descripcion" #descripcion='ngModel' [(ngModel)]='gotGame.descripcion'></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+  <div class="navbar-fixed">
+    <nav>
+      <div class="container">
+      <div class="nav-wrapper">
+        <a routerLink="/home" class="brand-logo"><img src="../assets/Img/Logo/logo.png" alt="Logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a routerLink="/video-games">Juegos</a></li>
+          <li><a routerLink="/home">Usuarios</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  </div>
+    <!--componentes-->
+    <router-outlet></router-outlet>
+<!--Inicio Footer-->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Jorge Malo Rojas</h5>
+      </div>
+      <div class="col l4 offset-l2 s12">
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2020 Bootcamp Desarrollo web fullstack
+    </div>
+  </div>
+</footer>
+<!--Fin Footer-->

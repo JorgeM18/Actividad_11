@@ -1,0 +1,42 @@
+<div class="carousel carousel-slider center .slider">
+    <div class="carousel-fixed-item center">
+        <h4 class="header center blue-grey-text text-lighten-4">Nuevos juegos añadidos cada mes!</h4>
+        <a routerLink="/add-game" class="btn waves-effect white grey-text darken-text-2">Añadir Nuevo Juego</a>
+    </div>
+    <div class="carousel-item" href="#one!">
+        <img src="../../../assets/Img/slider1.jpg" alt="">
+    </div>
+    <div class="carousel-item" href="#two!">
+        <img src="../../../assets/Img/slider2.jpg" alt="">
+    </div>
+    <div class="carousel-item" href="#three!">
+        <img src="../../../assets/Img/slider3.jpg" alt="">
+    </div>
+    <div class="carousel-item" href="#four!">
+        <img src="../../../assets/Img/slider4.jpg" alt="">
+    </div>
+</div>
+<div class="section games">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4" *ngFor='let game of listGames'>
+              <div class="card">
+                <div class="card-image">
+                  <img src="../../../assets/Img/fondo_1.jpeg">
+                  <span class="card-title">{{game.titulo}}</span>
+                  <a class="btn-floating waves-effect waves-light blue-grey" routerLink="/edit-game/{{game._id}}"><i class="material-icons">create</i></a>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red" routerLink="/delete-game/{{game._id}}"><i class="material-icons">delete</i></a>
+                </div>
+                <div class="card-content">
+                  <p>{{game.plataforma}}</p>
+                  <p>$ {{game.precio}} </p>
+                  <p>{{game.tipo}}</p>
+                  <p>{{game.descripcion}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+

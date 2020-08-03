@@ -1,0 +1,15 @@
+nav {
+    background-color: rgba(23, 26, 57,0.85);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+nav .container .nav-wrapper a img {
+    width: 75px;
+    height: 35px; 
+    line-height: 0;  
+}
+
+footer {
+    background-color: rgb(23, 26, 57);
+}
